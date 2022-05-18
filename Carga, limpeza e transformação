@@ -22,7 +22,7 @@ commit;
 
 ------------------------------------------------------------------------------
 
-TRUNCATE TABLE ST_PRODUTO
+TRUNCATE TABLE ST_PRODUTO;
 INSERT INTO ST_PRODUTO
 SELECT
 
