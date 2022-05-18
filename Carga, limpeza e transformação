@@ -1,0 +1,78 @@
+#Extração de dados das bases Fonte
+
+TRUNCATE TABLE ST_CADASTRO_CLIENTE;
+INSERT INTO ST_CADASTRO_CLIENTE
+SELECT 
+
+* 
+
+FROM source.TB_CADASTRO_CLIENTE;
+commit;
+
+------------------------------------------------------------------------------
+
+TRUNCATE TABLE ST_ENDERECO;
+INSERT INTO ST_ENDERECO
+SELECT
+
+*
+
+FROM source.TB_ENDERECO;
+commit;
+
+------------------------------------------------------------------------------
+
+TRUNCATE TABLE ST_PRODUTO
+INSERT INTO ST_PRODUTO
+SELECT
+
+*
+
+FROM source.TB_PRODUTO;
+commit;
+
+------------------------------------------------------------------------------
+
+TRUNCATE TABLE ST_CATEGORIA;
+INSERT INTO ST_CATEGORIA
+SELECT 
+
+* 
+
+FROM source.TB_CATEGORIA;
+commit;
+
+------------------------------------------------------------------------------
+
+TRUNCATE TABLE ST_LOCALIDADE;
+INSERT INTO ST_LOCALIDADE
+SELECT 
+
+* 
+
+FROM source.TB_LOCALIDADE;
+commit;
+
+------------------------------------------------------------------------------
+
+TRUNCATE TABLE ST_PEDIDOS;
+INSERT INTO ST_PEDIDOS
+SELECT 
+
+* 
+
+FROM source.TB_PEDIDOS;
+commit;
+
+
+------------------------------------------------------------------------------
+
+
+TRUNCATE TABLE ST_ITENS_PEDIDO;
+INSERT INTO ST_ITENS_PEDIDO
+SELECT 
+
+* 
+
+FROM source.TB_ITENS_PEDIDO;
+commit;
